@@ -10,7 +10,7 @@ fs.readdirSync('node_modules').filter(function(x) {
 });
 
 module.exports = {
-	entry: ['babel-polyfill', path.resolve(__dirname, './src/index.js')],
+	entry: ['babel-polyfill', path.resolve(__dirname, 'src/app.js')],
 	output: {
 		path: path.resolve(__dirname, './dist'),
 		filename: 'server.js'
